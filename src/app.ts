@@ -29,3 +29,16 @@ if (button) {
 printOutput(add(5, 2));
 
 // console.log(isOld);
+
+// Spread operator
+const hobbies = ['Sports', 'Cooking']
+const activeHobbies = ['Hiking']
+
+activeHobbies.push(...hobbies)
+
+const persons = {
+    name: 'Max',
+    age: 30
+};
+
+const copiedPerson ={...persons}
