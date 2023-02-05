@@ -4,7 +4,7 @@ let age = 30;
 
 age = 29;
 
-function addi(a: number, b: number){
+function addi(a: number, b: number = 1){
     let result;
     result = a + b;
     return result;
