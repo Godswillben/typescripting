@@ -37,8 +37,8 @@ const activeHobbies = ['Hiking']
 activeHobbies.push(...hobbies)
 
 const persons = {
-    name: 'Max',
-    age: 30,
+    firstName: 'Max',
+    ages: 30,
 };
 
 const copiedPerson ={...persons}
@@ -49,3 +49,12 @@ const adding = (...numbers: number[])=>{
         return curResult + curValue
     }, 0)
 }
+
+// Array and object destructuring 
+const [hobby1, hobby2, ...remainingHobbies] = hobbies
+
+console.log(hobbies, hobby1, hobby2)
+
+const {firstName:username, ages} = persons
+
+console.log(userNames, ages)
