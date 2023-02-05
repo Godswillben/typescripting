@@ -38,7 +38,14 @@ activeHobbies.push(...hobbies)
 
 const persons = {
     name: 'Max',
-    age: 30
+    age: 30,
 };
 
 const copiedPerson ={...persons}
+
+// rest parameters
+const adding = (...numbers: number[])=>{
+    return numbers.reduce((curResult, curValue)=>{
+        return curResult + curValue
+    }, 0)
+}
